@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="base-path" content="/ttmath-site">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - TTMath School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/ttmath-site/css/style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+<section class="page-header">
+    <div class="container">
+      <h1 data-i18n-en="Contact Us" data-i18n-zh="联系我们">Contact Us</h1>
+      <p data-i18n-en="Get in touch for enrollment inquiries or book a free assessment" data-i18n-zh="咨询报名或预约免费测评">Get in touch for enrollment inquiries or book a free assessment</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2 data-i18n-en="Get In Touch" data-i18n-zh="联系信息">Get In Touch</h2>
+
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <h4 data-i18n-en="Address" data-i18n-zh="地址">Address</h4>
+              <p data-i18n-en="590 Alden Rd Unit 101, Markham, ON L3R 8N2, Canada" data-i18n-zh="加拿大安大略省万锦市 Alden Rd 590号101室 L3R 8N2">590 Alden Rd Unit 101<br>Markham, ON L3R 8N2<br>Canada</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <h4 data-i18n-en="Phone" data-i18n-zh="电话">Phone</h4>
+              <p>905-604-9339</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <h4 data-i18n-en="Email" data-i18n-zh="邮箱">Email</h4>
+              <p>info@ttmath.ca</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">💬</span>
+            <div>
+              <h4 data-i18n-en="WeChat" data-i18n-zh="微信">WeChat</h4>
+              <p>TTMATHSCHOOL</p>
+            </div>
+          </div>
+
+          <div class="contact-hours">
+            <h4 data-i18n-en="Office Hours" data-i18n-zh="办公时间">Office Hours</h4>
+            <p data-i18n-en="Monday - Friday: 4:00 PM - 9:00 PM" data-i18n-zh="周一至周五：下午4:00 - 晚上9:00">Monday - Friday: 4:00 PM - 9:00 PM</p>
+            <p data-i18n-en="Saturday - Sunday: 9:00 AM - 6:00 PM" data-i18n-zh="周六至周日：上午9:00 - 下午6:00">Saturday - Sunday: 9:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+          <h2 data-i18n-en="Book a Free Assessment" data-i18n-zh="预约免费测评">Book a Free Assessment</h2>
+          <p data-i18n-en="Find out which program is right for your child." data-i18n-zh="为孩子匹配合适的课程。">Find out which program is right for your child.</p>
+
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="parent-name" data-i18n-en="Parent Name" data-i18n-zh="家长姓名">Parent Name</label>
+              <input type="text" id="parent-name" name="parent-name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="student-name" data-i18n-en="Student Name" data-i18n-zh="学生姓名">Student Name</label>
+              <input type="text" id="student-name" name="student-name" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="grade" data-i18n-en="Grade" data-i18n-zh="年级">Grade</label>
+                <select id="grade" name="grade" required>
+                  <option value="" data-i18n-en="Select..." data-i18n-zh="请选择...">Select...</option>
+                  <option value="2" data-i18n-en="Grade 2" data-i18n-zh="二年级">Grade 2</option>
+                  <option value="3" data-i18n-en="Grade 3" data-i18n-zh="三年级">Grade 3</option>
+                  <option value="4" data-i18n-en="Grade 4" data-i18n-zh="四年级">Grade 4</option>
+                  <option value="5" data-i18n-en="Grade 5" data-i18n-zh="五年级">Grade 5</option>
+                  <option value="6" data-i18n-en="Grade 6" data-i18n-zh="六年级">Grade 6</option>
+                  <option value="7" data-i18n-en="Grade 7" data-i18n-zh="七年级">Grade 7</option>
+                  <option value="8" data-i18n-en="Grade 8" data-i18n-zh="八年级">Grade 8</option>
+                  <option value="9" data-i18n-en="Grade 9" data-i18n-zh="九年级">Grade 9</option>
+                  <option value="10" data-i18n-en="Grade 10" data-i18n-zh="十年级">Grade 10</option>
+                  <option value="11" data-i18n-en="Grade 11" data-i18n-zh="十一年级">Grade 11</option>
+                  <option value="12" data-i18n-en="Grade 12" data-i18n-zh="十二年级">Grade 12</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="interest" data-i18n-en="Interest" data-i18n-zh="兴趣方向">Interest</label>
+                <select id="interest" name="interest" required>
+                  <option value="" data-i18n-en="Select..." data-i18n-zh="请选择...">Select...</option>
+                  <option value="math" data-i18n-en="Competition Math" data-i18n-zh="竞赛数学">Competition Math</option>
+                  <option value="cs" data-i18n-en="Computer Science" data-i18n-zh="计算机科学">Computer Science</option>
+                  <option value="both" data-i18n-en="Both" data-i18n-zh="两者">Both</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email" data-i18n-en="Email" data-i18n-zh="邮箱">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone" data-i18n-en="Phone" data-i18n-zh="电话">Phone</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+              <label for="message" data-i18n-en="Message (Optional)" data-i18n-zh="留言（可选）">Message (Optional)</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your child's math background or any questions..." data-i18n-placeholder-en="Tell us about your child's math background or any questions..." data-i18n-placeholder-zh="请简单描述孩子的数学基础或问题..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-full" data-i18n-en="Submit Request" data-i18n-zh="提交申请">Submit Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section">
+    <div class="container">
+      <h2 data-i18n-en="Location" data-i18n-zh="位置">Location</h2>
+      <div class="map-placeholder">
+        <p data-i18n-en="590 Alden Rd Unit 101, Markham, ON L3R 8N2" data-i18n-zh="加拿大安大略省万锦市 Alden Rd 590号101室 L3R 8N2">590 Alden Rd Unit 101, Markham, ON L3R 8N2</p>
+        <a href="https://maps.google.com/?q=590+Alden+Rd+Unit+101+Markham+ON+L3R+8N2" target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-i18n-en="Open in Google Maps" data-i18n-zh="在Google地图中打开">Open in Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+<script src="/ttmath-site/js/main.js" defer></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const lang = localStorage.getItem('ttmath-lang') || 'en';
+      const message = lang === 'zh'
+        ? '谢谢！我们会尽快联系您安排免费测评。'
+        : 'Thank you! We will contact you shortly to schedule your free assessment.';
+      alert(message);
+    }
+  </script>
+</body>
+</html>
