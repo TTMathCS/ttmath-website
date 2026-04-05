@@ -88,13 +88,17 @@ function animateCounter(el) {
   const text = n.textContent, match = text.match(/(\d+)/);
   if (!match) return;
   const target = parseInt(match[0]), suffix = text.replace(match[0], '');
-  let cur = 0;
-  const step = target / 60;
-  const timer = setInterval(() => {
-    cur += step;
-    if (cur >= target) { clearInterval(timer); n.textContent = target + suffix; }
-    else n.textContent = Math.floor(cur) + suffix;
-  }, 25);
+  const dur = 1200;
+  const start = performance.now();
+  function ease(t) { return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2; }
+  function tick(now) {
+    const t = Math.min((now - start) / dur, 1);
+    const v = Math.floor(ease(t) * target);
+    n.textContent = v + suffix;
+    if (t < 1) requestAnimationFrame(tick);
+    else n.textContent = target + suffix;
+  }
+  requestAnimationFrame(tick);
 }
 
 document.querySelectorAll('img').forEach(img => {
