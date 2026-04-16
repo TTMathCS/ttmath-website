@@ -865,6 +865,8 @@ body.is-loaded .hero .hero-buttons {
 
 /* Image loading */
 img {
+  max-width: 100%;
+  height: auto;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
@@ -3159,6 +3161,10 @@ img.loaded {
 }
 
 @media (max-width: 900px) {
+  .header .container {
+    flex-wrap: wrap;
+  }
+
   .nav {
     display: none;
     flex-direction: column;
@@ -3167,6 +3173,7 @@ img.loaded {
     border-radius: 18px;
     padding: 18px;
     width: 100%;
+    order: 3;
     box-shadow: var(--shadow);
     margin-top: 16px;
   }
@@ -3385,5 +3392,94 @@ img.loaded {
 
   .deadline-list li {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero {
+    padding: 90px 0 48px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.88rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .hero-badges {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    padding: 12px 22px;
+    font-size: 0.88rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-number {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .page-header {
+    padding: 80px 0 40px;
+  }
+
+  .page-header h1 {
+    font-size: 1.45rem;
+  }
+
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 6px 8px;
+    font-size: 0.72rem;
+  }
+
+  .contest-table th,
+  .contest-table td {
+    padding: 6px;
+    font-size: 0.68rem;
+  }
+
+  .contest-hero-content h1 {
+    font-size: 1.55rem;
+  }
+
+  .subnav-cta {
+    flex-direction: column;
+  }
+
+  .subnav-cta .btn {
+    width: 100%;
   }
 }
